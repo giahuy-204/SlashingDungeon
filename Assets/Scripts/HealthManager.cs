@@ -45,7 +45,7 @@ public class HealthManager : MonoBehaviour
     }
 
     public IEnumerator LoadGameOver() {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene("GameOver");
         //add scene later
     }
