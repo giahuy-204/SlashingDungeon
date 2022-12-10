@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6963218544976182210}
   - component: {fileID: 4310853700477919703}
   - component: {fileID: 6042461389410595556}
-  - component: {fileID: -8290930867444807611}
   m_Layer: 0
   m_Name: MaskedOrc
   m_TagString: Enemies
@@ -155,15 +154,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-8290930867444807611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6963218544976182214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a21d8f513d01a45888939e0b3a8c88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -5,14 +5,11 @@ using UnityEngine;
 public class SpawnChestScript : MonoBehaviour
 {
     public GameObject sword;
+    public bool isCollided = false;
     // Start is called before the first frame update
     void Start()
     {
-        // if (sword == null)
-        // {
-        //     sword = GameObject.FindWithTag("Sword");
-        // }
-        // sword.SetActive(true);
+        sword = GameObject.FindWithTag("Sword");
     }
 
     // Update is called once per frame
@@ -27,6 +24,11 @@ public class SpawnChestScript : MonoBehaviour
         {
             gameObject.transform.Find("Closed").gameObject.SetActive(false);
             gameObject.transform.Find("Open").gameObject.SetActive(true);
+            sword.SetActive(true);
         }
+        //disable box collider
+        gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        //collided
+        isCollided = true;
     }
 }

@@ -223,7 +223,7 @@ PrefabInstance:
       value: Door vertical
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 6492845007151370218, guid: 08b3e0cd36bbde248b967fe16c5fcfeb, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 08b3e0cd36bbde248b967fe16c5fcfeb, type: 3}
 --- !u!1001 &559924586
 PrefabInstance:
@@ -232,6 +232,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1091155738563970879, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1091155738563970879, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1255600999536079702, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2335,24 +2343,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 567989972465068645, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
---- !u!1 &1790252130 stripped
+--- !u!1 &559924587 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3303154016479813117, guid: b4cffa748a5dc3942a5af6182e8107a2, type: 3}
-  m_PrefabInstance: {fileID: 1900594242}
+  m_CorrespondingSourceObject: {fileID: 3546239131609834275, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+  m_PrefabInstance: {fileID: 559924586}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1790252135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790252130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc2e3f7b27187a442b10dd215f68258d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sword: {fileID: 0}
 --- !u!1001 &1900594242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2360,6 +2355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7064017402364133733, guid: b4cffa748a5dc3942a5af6182e8107a2, type: 3}
+      propertyPath: sword
+      value: 
+      objectReference: {fileID: 559924587}
     - target: {fileID: 1741603586766153639, guid: b4cffa748a5dc3942a5af6182e8107a2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2406,6 +2405,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3303154016479813117, guid: b4cffa748a5dc3942a5af6182e8107a2, type: 3}
       propertyPath: m_Name
+      value: Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303154016479813117, guid: b4cffa748a5dc3942a5af6182e8107a2, type: 3}
+      propertyPath: m_TagString
       value: Chest
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -2526,23 +2529,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ZoomOutSize: 70
---- !u!1 &2003233835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3943235528565091398, guid: 08b3e0cd36bbde248b967fe16c5fcfeb, type: 3}
-  m_PrefabInstance: {fileID: 496270237}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2003233840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003233835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d4662764c30fb4884b505a8ff4355e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2051577565
 PrefabInstance:
   m_ObjectHideFlags: 0
