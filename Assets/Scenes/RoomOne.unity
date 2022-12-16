@@ -7604,6 +7604,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 343675519}
     m_Modifications:
+    - target: {fileID: 428597460020653648, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428597460020653648, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428597460020653648, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.8409729
+      objectReference: {fileID: 0}
     - target: {fileID: 2961552377499803526, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7660,7 +7672,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Time
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 0.49327245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].time
+      value: 0.9349776
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.36842078
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0.9649123
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].value
+      value: 0.3771927
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].inWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6700846346749074039, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
 --- !u!1001 &687914804
 PrefabInstance:
@@ -8185,3 +8246,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bafcfb04c519a754f95a4e8864d764e7, type: 3}
+--- !u!1 &2017221229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1660660431818816410, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+  m_PrefabInstance: {fileID: 596462087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2017221233
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017221229}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f9313cb90bb1cc147a1f6155513718aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
