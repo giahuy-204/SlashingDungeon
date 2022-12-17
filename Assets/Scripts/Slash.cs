@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Slash : MonoBehaviour
 {
-    private GameObject player;
+    public int enemiesKilled = 0;
     // Start is called before the first frame update
     void Start()
     {
-        // player = GameObject.FindWithTag("Player");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        // gameObject.transform.position = player.transform.position;
+        // transform.position = new Vector3 (player.position.x + offset.x, player.position.y + offset.y, offset.z);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -22,6 +22,7 @@ public class Slash : MonoBehaviour
         if(other.gameObject.tag == "Enemies")
         {
             other.gameObject.SetActive(false);
+            enemiesKilled++;
         }
     }
 }
