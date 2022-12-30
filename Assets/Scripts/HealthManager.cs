@@ -32,6 +32,15 @@ public class HealthManager : MonoBehaviour
             TakeDamage(1);
             StartCoroutine(Knockback());
         }
+        if(other.gameObject.tag == "Healing")
+        {
+            if(currentHealth < maxHealth)
+            {
+                currentHealth += 1;
+                healthBar.SetHealth(currentHealth);
+                other.gameObject.SetActive(false);
+            }
+        }
     }
 
     public void TakeDamage(int damage)

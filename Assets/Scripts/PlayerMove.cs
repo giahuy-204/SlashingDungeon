@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float MoveSpeed = 5f;
+    public float MoveSpeed = 10f;
 
     private Vector2 movement;
     private new Rigidbody2D rigidbody;
     private SpriteRenderer spriteRenderer;
     public Vector3 oldPos;
     public Quaternion oldRot;
+    private bool isRight = true;
 
     public void Start()
     {
@@ -20,22 +21,27 @@ public class PlayerMove : MonoBehaviour
 
     public void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        if (movement.x < 0)
-        {
-            spriteRenderer.flipX = true;
+        float xVal = Input.GetAxisRaw("Horizontal") * Time.deltaTime * MoveSpeed;
+        if (xVal > 0 && !isRight) {
+            Flip();
         }
-        else if (movement.x > 0)
-        {
-            spriteRenderer.flipX = false;
+        if (xVal < 0 && isRight) {
+            Flip();
         }
-    }
 
-    public void FixedUpdate()
-    {
-        rigidbody.MovePosition(rigidbody.position + movement.normalized * MoveSpeed * Time.fixedDeltaTime);    
+        var Horizontal = Input.GetAxis("Horizontal");
+        var Vertical = Input.GetAxis("Vertical");
+
+        if (Horizontal != 0 && Vertical == 0) {
+            rigidbody.velocity = new Vector2(Horizontal * MoveSpeed, rigidbody.velocity.y);
+        }
+        else if (Vertical != 0 && Horizontal == 0) {
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x, Vertical * MoveSpeed);
+        } 
+        else if (Vertical != 0 && Horizontal != 0)
+        {
+            rigidbody.velocity = new Vector2(Horizontal * MoveSpeed, Vertical * MoveSpeed);
+        }
     }
 
     private void LateUpdate() {
@@ -51,5 +57,13 @@ public class PlayerMove : MonoBehaviour
 
         // oldPos = transform.position;
         // oldRot = transform.rotation;
+    }
+
+    private void Flip() {
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        isRight = !isRight;
     }
 }
