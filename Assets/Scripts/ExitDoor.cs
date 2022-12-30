@@ -1,33 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
-public class ConditionDoors : MonoBehaviour
+public class ExitDoor : MonoBehaviour
 {
     public GameObject slashing;
-    public TMP_Text questText;
-    public int enemiesKilled;
+    public bool bossKilled;
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        enemiesKilled = slashing.GetComponent<Slash>().enemiesKilled;
+        bossKilled = slashing.GetComponent<Slash>().bossKilled;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Player")
         {
-            if(enemiesKilled == 10)
+            if(bossKilled)
             {
                 gameObject.SetActive(false);
-                questText.text = "<s>Enemies Killed: " + enemiesKilled + "/10</s> <br> <s>Unlock Door</s> <br> Kill Boss";
             }
         }
     }

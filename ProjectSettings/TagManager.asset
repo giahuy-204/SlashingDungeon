@@ -9,6 +9,7 @@ TagManager:
   - Chest
   - Slashing
   - Healing
+  - Boss
   layers:
   - Default
   - TransparentFX

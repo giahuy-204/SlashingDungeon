@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 3943235528565091397}
   - component: {fileID: 4840109161657311593}
   - component: {fileID: 2446771280610136498}
-  - component: {fileID: -7087374184101201616}
   m_Layer: 0
-  m_Name: Door vertical
+  m_Name: Exit Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,18 +71,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.8
---- !u!114 &-7087374184101201616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3943235528565091398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77d4662764c30fb4884b505a8ff4355e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5139482181201756972
 GameObject:
   m_ObjectHideFlags: 0
