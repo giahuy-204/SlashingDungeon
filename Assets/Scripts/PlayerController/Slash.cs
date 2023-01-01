@@ -23,9 +23,11 @@ public class Slash : MonoBehaviour
         questText.text = "Enemies Killed: " + enemiesKilled + "/10";
         if (enemiesKilled == 10)
         {
-            //add striketrough for text
             questText.text = "<s>Enemies Killed: " + enemiesKilled + "/10</s> <br> Kill Boss";
         }
+        if (bossKilled) {
+            questText.text = "<s>Enemies Killed: " + enemiesKilled + "/10</s> <br> <s>Kill Boss</s> <br> Exit";
+        } 
         if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("Slashing"))
         {
             isSlashing = true;
