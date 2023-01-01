@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     public Vector3 oldPos;
     public Quaternion oldRot;
     private bool isRight = true;
+    public GameObject slashing;
+    public bool isSlashing = false;
 
     public void Start()
     {
@@ -22,13 +24,15 @@ public class PlayerMove : MonoBehaviour
     public void Update()
     {
         float xVal = Input.GetAxisRaw("Horizontal") * Time.deltaTime * MoveSpeed;
-        if (xVal > 0 && !isRight) {
-            Flip();
+        isSlashing = slashing.GetComponent<Slash>().isSlashing;
+        if (!isSlashing) {
+            if (xVal > 0 && !isRight) {
+                Flip();
+            }
+            if (xVal < 0 && isRight) {
+                Flip();
+            }
         }
-        if (xVal < 0 && isRight) {
-            Flip();
-        }
-
         var Horizontal = Input.GetAxis("Horizontal");
         var Vertical = Input.GetAxis("Vertical");
 

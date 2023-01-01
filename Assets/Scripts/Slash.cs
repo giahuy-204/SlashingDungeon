@@ -9,11 +9,13 @@ public class Slash : MonoBehaviour
     public int enemiesKilled = 0;
     public bool bossKilled = false;
     public TMP_Text questText;
+    public bool isSlashing = false;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-
-    }
+        animator = GetComponent<Animator>();
+    }   
 
     // Update is called once per frame
     void Update()
@@ -22,11 +24,13 @@ public class Slash : MonoBehaviour
         if (enemiesKilled == 10)
         {
             //add striketrough for text
-            questText.text = "<s>Enemies Killed: " + enemiesKilled + "/10</s> <br> Unlock Door";
+            questText.text = "<s>Enemies Killed: " + enemiesKilled + "/10</s> <br> Kill Boss";
         }
-        if (bossKilled)
+        if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("Slashing"))
         {
-            questText.text = "<s>Enemies Killed: 10/10 </s> <br> <s>Unlock Door</s> <br> <s>Kill Boss</s>";
+            isSlashing = true;
+        } else {
+            isSlashing = false;
         }
     }
 

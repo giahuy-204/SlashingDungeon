@@ -397,6 +397,8 @@ MonoBehaviour:
   MoveSpeed: 5
   oldPos: {x: 0, y: 0, z: 0}
   oldRot: {x: 0, y: 0, z: 0, w: 0}
+  slashing: {fileID: 4564173409135280355}
+  isSlashing: 0
 --- !u!114 &897192974178719327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,6 +563,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesKilled: 0
+  bossKilled: 0
+  questText: {fileID: 0}
+  isSlashing: 0
 --- !u!1 &4833452782198670893
 GameObject:
   m_ObjectHideFlags: 0
