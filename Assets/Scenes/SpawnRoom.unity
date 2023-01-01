@@ -253,6 +253,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1831328864238835802, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964959306809098242, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3248718211476915107, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
       value: 2
@@ -1398,12 +1406,20 @@ PrefabInstance:
       value: -40000000
       objectReference: {fileID: 0}
     - target: {fileID: 3546239131609834275, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_Name
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 3546239131609834275, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3546239131609834275, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
       propertyPath: m_TagString
       value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 3854941249227817605, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4288752848716210733, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
       propertyPath: m_Tiles.Array.size
@@ -1965,6 +1981,10 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[64].second.m_TileSpriteIndex
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 4879015686832141480, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5310602953364590650, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 0
@@ -2087,6 +2107,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5310602953364590650, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
       propertyPath: m_Tiles.Array.data[0].second.m_TileSpriteIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416172773470932353, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_Name
+      value: Staff
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416172773470932353, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8169825029420160236, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
@@ -2341,8 +2369,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn room
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 567989972465068645, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfebc572ee520ff49944c3fbb21c269a, type: 3}
 --- !u!1 &559924587 stripped
 GameObject:

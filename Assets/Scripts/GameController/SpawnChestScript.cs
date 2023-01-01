@@ -9,7 +9,7 @@ public class SpawnChestScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sword = GameObject.FindWithTag("Sword");
+        
     }
 
     // Update is called once per frame

@@ -27,7 +27,7 @@ public class HealthManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Enemies")
+        if(other.gameObject.tag == "Enemies" || other.gameObject.tag == "Boss")
         {
             TakeDamage(1);
             StartCoroutine(Knockback());
