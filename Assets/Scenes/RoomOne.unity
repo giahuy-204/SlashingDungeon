@@ -27867,6 +27867,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2072134149}
     m_Modifications:
+    - target: {fileID: 2179296400991150109, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2179296400991150110, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
       propertyPath: m_Name
       value: OgreBoss
@@ -27918,6 +27922,26 @@ PrefabInstance:
     - target: {fileID: 2179296400991150111, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797693043400559760, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797693043400559760, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797693043400559760, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797693043400559760, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459400248764797830, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 843d7854534a5594ea2acbf5fe253601, type: 3}
@@ -28175,7 +28199,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

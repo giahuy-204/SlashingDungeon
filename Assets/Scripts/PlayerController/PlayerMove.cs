@@ -23,16 +23,6 @@ public class PlayerMove : MonoBehaviour
 
     public void Update()
     {
-        float xVal = Input.GetAxisRaw("Horizontal") * Time.deltaTime * MoveSpeed;
-        isSlashing = slashing.GetComponent<Slash>().isSlashing;
-        if (!isSlashing) {
-            if (xVal > 0 && !isRight) {
-                Flip();
-            }
-            if (xVal < 0 && isRight) {
-                Flip();
-            }
-        }
         var Horizontal = Input.GetAxis("Horizontal");
         var Vertical = Input.GetAxis("Vertical");
 
@@ -49,19 +39,22 @@ public class PlayerMove : MonoBehaviour
     }
 
     private void LateUpdate() {
-        // Vector3 moveDirection = oldRot * (transform.position - oldPos);
-        // //check if character is moving
-        // if (moveDirection.magnitude > 0.01f) {
-        //     if(moveDirection.x > 0) {
-        //         spriteRenderer.flipX = false;
-        //     } else if(moveDirection.x < 0) {
-        //         spriteRenderer.flipX = true;
-        //     }
-        // }
-
-        // oldPos = transform.position;
-        // oldRot = transform.rotation;
+        float xVal = Input.GetAxisRaw("Horizontal") * Time.deltaTime * MoveSpeed;
+        isSlashing = slashing.GetComponent<Slash>().isSlashing;
+        if (!isSlashing) {
+            if (xVal > 0 && !isRight) {
+                Flip();
+            }
+            if (xVal < 0 && isRight) {
+                Flip();
+            }
+        }
     }
+
+    // public IEnumerator FlipIfNotSlash() {
+    //     yield return new WaitForSeconds(0.2f);
+    //     Flip();
+    // }
 
     private void Flip() {
         Vector3 currentScale = gameObject.transform.localScale;
