@@ -10,7 +10,7 @@ public class Slash : MonoBehaviour
     public bool bossKilled = false;
     public TMP_Text questText;
     public bool isSlashing = false;
-    public int bossHealth = 10;
+    public int bossHealth = 50;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -47,6 +47,7 @@ public class Slash : MonoBehaviour
         if(other.gameObject.tag == "Boss")
         {
             bossHealth--;
+            other.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
             if (bossHealth == 0)
             {
                 other.gameObject.SetActive(false);
