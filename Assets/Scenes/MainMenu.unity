@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 28729223}
   - component: {fileID: 28729224}
   m_Layer: 5
-  m_Name: SfxSlider
+  m_Name: SoundSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -452,7 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 285653057}
   m_Layer: 5
-  m_Name: SfxVolume
+  m_Name: SoundVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -908,7 +908,6 @@ GameObject:
   - component: {fileID: 521602872}
   - component: {fileID: 521602871}
   - component: {fileID: 521602870}
-  - component: {fileID: 521602869}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -916,25 +915,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &521602869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521602868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43b1bd5c6e2a5ff478ddb8b1d081c282, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btnPlay: {fileID: 2137249715}
-  btnSettings: {fileID: 680699305}
-  btnExit: {fileID: 464348136}
-  settingsDone: {fileID: 360516711}
-  canvasSettings: {fileID: 1527157809}
-  canvasMain: {fileID: 521602872}
-  sliderVolume: {fileID: 1763438996}
 --- !u!114 &521602870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1328,6 +1308,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617357963}
   m_CullTransparentMesh: 1
+--- !u!1 &628023466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628023468}
+  - component: {fileID: 628023467}
+  m_Layer: 0
+  m_Name: MenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &628023467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628023466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b1bd5c6e2a5ff478ddb8b1d081c282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnPlay: {fileID: 2137249715}
+  btnSettings: {fileID: 680699305}
+  btnExit: {fileID: 464348136}
+  settingsDone: {fileID: 360516711}
+  canvasSettings: {fileID: 1527157809}
+  canvasMain: {fileID: 521602872}
+  musicVolume: {fileID: 1763438996}
+  soundVolume: {fileID: 28729224}
+--- !u!4 &628023468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628023466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.3201475, y: 2.1040049, z: 0.030812616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646824437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,7 +1370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 646824438}
   m_Layer: 5
-  m_Name: BackgroundVolume
+  m_Name: MusicVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2513,7 +2545,7 @@ GameObject:
   - component: {fileID: 1763438995}
   - component: {fileID: 1763438996}
   m_Layer: 5
-  m_Name: BackgroundSlider
+  m_Name: MusicSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

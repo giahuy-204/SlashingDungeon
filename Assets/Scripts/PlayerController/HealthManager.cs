@@ -31,6 +31,7 @@ public class HealthManager : MonoBehaviour
         {
             TakeDamage(1);
             StartCoroutine(Knockback());
+            PlayerPrefs.SetInt("beingHit", 1);
         }
         if(other.gameObject.tag == "Healing")
         {
@@ -39,6 +40,7 @@ public class HealthManager : MonoBehaviour
                 currentHealth += 1;
                 healthBar.SetHealth(currentHealth);
                 other.gameObject.SetActive(false);
+                PlayerPrefs.SetInt("healing", 1);
             }
         }
     }
@@ -54,9 +56,9 @@ public class HealthManager : MonoBehaviour
     }
 
     public IEnumerator LoadGameOver() {
+        PlayerPrefs.SetInt("dying", 1);
         yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene("GameOver");
-        //add scene later
     }
 
     public IEnumerator Knockback() {

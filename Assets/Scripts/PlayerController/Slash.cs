@@ -54,5 +54,9 @@ public class Slash : MonoBehaviour
                 bossKilled = true;
             }
         }
+        if(other.gameObject.tag == "Enemies" || other.gameObject.tag == "Boss")
+        {
+            PlayerPrefs.SetInt("hitting", 1);
+        }
     }
 }

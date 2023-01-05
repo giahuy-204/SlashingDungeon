@@ -12,7 +12,8 @@ public class UIManager : MonoBehaviour
     public Button settingsDone;
     public Canvas canvasSettings;
     public Canvas canvasMain;
-    public Slider sliderVolume;
+    public Slider musicVolume;
+    public Slider soundVolume;
 
     void Awake() {
         btnPlay.onClick.AddListener(onClickPlay);
@@ -22,8 +23,11 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        bool isSound = PlayerPrefs.GetFloat("volume") == 1 ? true : false;
-        float volume = PlayerPrefs.GetFloat("volume");
+        PlayerPrefs.SetInt("slashing", 0);
+        PlayerPrefs.SetInt("hitting", 0);
+        PlayerPrefs.SetInt("healing", 0);
+        PlayerPrefs.SetInt("beingHit", 0);
+        PlayerPrefs.SetInt("dying", 0);
     }
 
     public void onClickPlay()
@@ -52,8 +56,9 @@ public class UIManager : MonoBehaviour
             btnSettings.interactable = true;
             btnExit.interactable = true;
         }
-        PlayerPrefs.SetFloat("volume", sliderVolume.value);
-        AudioListener.volume = sliderVolume.value;
+        PlayerPrefs.SetFloat("soundVolume", soundVolume.value);
+        PlayerPrefs.SetFloat("musicVolume", musicVolume.value);
+        AudioListener.volume = musicVolume.value;
         settingsDone.onClick.RemoveListener(onClickSettingsDone);
         canvasMain.gameObject.SetActive(true);
     }

@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            PlayerPrefs.SetInt("slashing", 1);
             isAttacking = true;
             animator.SetBool("isAttacking", isAttacking);
         }
