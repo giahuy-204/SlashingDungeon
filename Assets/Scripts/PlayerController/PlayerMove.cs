@@ -36,9 +36,7 @@ public class PlayerMove : MonoBehaviour
         {
             rigidbody.velocity = new Vector2(Horizontal * MoveSpeed, Vertical * MoveSpeed);
         }
-    }
 
-    private void LateUpdate() {
         float xVal = Input.GetAxisRaw("Horizontal") * Time.deltaTime * MoveSpeed;
         isSlashing = slashing.GetComponent<Slash>().isSlashing;
         if (!isSlashing) {
@@ -49,6 +47,10 @@ public class PlayerMove : MonoBehaviour
                 Flip();
             }
         }
+    }
+
+    private void LateUpdate() {
+
     }
 
     // public IEnumerator FlipIfNotSlash() {

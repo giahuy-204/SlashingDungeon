@@ -10,12 +10,12 @@ public class Slash : MonoBehaviour
     public bool bossKilled = false;
     public TMP_Text questText;
     public bool isSlashing = false;
-    public int bossHealth = 50;
+    public int bossHealth = 200;
     Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = gameObject.GetComponent<Animator>();
     }   
 
     // Update is called once per frame
@@ -58,5 +58,6 @@ public class Slash : MonoBehaviour
         {
             PlayerPrefs.SetInt("hitting", 1);
         }
+        animator.SetBool("isAttacking", false);
     }
 }

@@ -32,8 +32,6 @@ public class GameSoundManager : MonoBehaviour
     {
         musicVolume.volume = musicVolumeValue;
         soundVolume.volume = soundVolumeValue;
-
-        DontDestroyOnLoad(musicVolume);
     }
 
     void Update()

@@ -27620,6 +27620,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2211221026802016736, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2961552377499803526, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -27691,6 +27695,10 @@ PrefabInstance:
     - target: {fileID: 4920049267116376581, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210590488820244496, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7196468965099304741, guid: 7505d303cbf6ea346a6259c66c5fb785, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -28654,6 +28662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameQuest
       objectReference: {fileID: 0}
+    - target: {fileID: 3182589336633160909, guid: 55ef7fbedb6cb9148bfd37e9e0da58e5, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3182589336633160911, guid: 55ef7fbedb6cb9148bfd37e9e0da58e5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -28737,6 +28749,10 @@ PrefabInstance:
     - target: {fileID: 3182589336633160911, guid: 55ef7fbedb6cb9148bfd37e9e0da58e5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182589337681864170, guid: 55ef7fbedb6cb9148bfd37e9e0da58e5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3182589337681864181, guid: 55ef7fbedb6cb9148bfd37e9e0da58e5, type: 3}
       propertyPath: m_VerticalAlignment
